@@ -16,7 +16,6 @@ model Users {
   password String     @db.VarChar(255)
   Sessions Sessions[]
 
-  @@unique([email, id])
   @@map("users")
 }
 
